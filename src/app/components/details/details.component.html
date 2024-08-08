@@ -1,4 +1,9 @@
+
+<!-- Sset conditionally the class h1-heading based on a boolean value -->
+
 <h1 [class.h1-heading]="IsH1Heading">{{Title | uppercase}}</h1>
+
+<!-- using pipes to fornmat information -->
 
 <h1>{{Description | lowercase}}</h1>
 
@@ -13,17 +18,24 @@
 
 <img [src]="Image" [width]="Width"  >
 
+<!-- hooking events-->
 <hr>
 <button type="button" (click)="setTimeToNow()" [attr.aria-label]="attributeValue">Set Time to Now</button>
 
+<!-- accessing a variable  -->
 <p> {{time}}</p>
 
+<!-- Template Variables # this is a tipe of variable set automaticaly for the input control -->
 
 <input #color type="text" placeholder="Type your color">
 <button type="button" (click)="setColor(color.value)" [attr.aria-label]="attributeValue">Set Color</button>
 <h1 [style.color]="pColor">{{Description | lowercase}}</h1>
 
+<!-- Two-way-binding example -->
 
+<input type="text" [(ngModel)] = "fullName">
+
+<p>{{fullName}}</p>
 
 <app-details-movies></app-details-movies>
 

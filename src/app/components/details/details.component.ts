@@ -47,7 +47,7 @@ export class DetailsComponent
   Image = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.timeout.com%2Fimages%2F102796952%2Fimage.jpg&f=1&nofb=1&ipt=d757d4888e41793ec8306aecf7bd1a6dc66117d6f8e5ecc901847941ea8f5916&ipo=images';
   attributeValue= 'movies-app-test-value'
   IsH1Heading = true;
-  
+  fullName = "Andre Rizzato"
   time = new Date()
   setTimeToNow()
   {
