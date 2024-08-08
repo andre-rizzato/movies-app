@@ -1,0 +1,30 @@
+<h1 [class.h1-heading]="IsH1Heading">{{Title | uppercase}}</h1>
+
+<h1>{{Description | lowercase}}</h1>
+
+<label>Selling price</label>
+<h1>{{SellingPrice | currency}}</h1>
+
+<label>Profit</label>
+<h1>{{SellingPrice | profitPipe: Price}}</h1>
+
+
+<h1>{{Date | date:"dd/MM/yyyy"}}</h1>
+
+<img [src]="Image" [width]="Width"  >
+
+<hr>
+<button type="button" (click)="setTimeToNow()" [attr.aria-label]="attributeValue">Set Time to Now</button>
+
+<p> {{time}}</p>
+
+
+<input #color type="text" placeholder="Type your color">
+<button type="button" (click)="setColor(color.value)" [attr.aria-label]="attributeValue">Set Color</button>
+<h1 [style.color]="pColor">{{Description | lowercase}}</h1>
+
+
+
+<app-details-movies></app-details-movies>
+
+<app-details-reviews></app-details-reviews>
